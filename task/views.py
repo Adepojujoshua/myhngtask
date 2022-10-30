@@ -3,7 +3,7 @@ from django.http import JsonResponse
 
 def home_view(request):
   post = {
-    "slack_username": "bemjoe",
+    "slackUsername": "bemjoe",
     "backend": True,
     "age": 22,
     "bio": "Trying to get good at backend development"
