@@ -1,15 +1,13 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 
 def home_view(request):
   post = {
     "slack_username": "bemjoe",
-    "backend": "true",
+    "backend": True,
     "age": 22,
     "bio": "Trying to get good at backend development"
   }
   
-  context = {
-    "post": post,
-  }
   
-  return render(request, 'task/index.html', context)
+  return JsonResponse(post)

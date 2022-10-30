@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="">
   </head>
   <body>
-      <p>{{ post }}</p>
+      <p>{% for key, value in dataset.items %}
+          {{key}}:{{value}}
+          {% endfor %}
+      </p>
     <script src="" async defer></script>
   </body>
 </html>
